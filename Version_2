@@ -22,6 +22,6 @@ t1.primary_key
   WHEN Attribute_3 = 1 THEN 3
   ELSE 0
 END AS Results
-FROM Tables_skema.Table as t1
+FROM Tables_skema.Table AS t1
 WHERE Results <> 0
 ;
