@@ -7,7 +7,7 @@ Pros:
 Cons:
   1) The order of the WHENs matters and generally requires the more complex WHENs earlier than their simpler counterparts to maintain accuracy.
   2) This is not as efficient as possible.
-Update: Traded WHEN order simplicity for significantly faster runtime (less evaluations per WHEN) and some data type protections (disallows string issues).
+Update: Traded WHEN order simplicity for significantly faster runtime and some data type protections (disallows string issues).
 */
 SELECT
 t1.primary_key
