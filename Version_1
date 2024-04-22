@@ -1,0 +1,26 @@
+/*
+Use a case statement to sort through 3 Attributes.
+Pros:
+  1) The structure is exceedingly simple to understand.
+  2) The order of the WHENs doesn't matter.
+Cons:
+  1) The conditionals and outputs are NOT simple to maintain.
+  2) The O-runtime is suboptimal because evaluation on all attributes is performed every WHEN.
+  3) Does this run accurately if there are non- '0' or '1' values present? Yes, but they should be prevented.
+     Can this withstand NULLs? Yes, but they should be prevented.
+*/
+SELECT
+t1.primary_key
+,CASE
+  WHEN Attribute_1 = '1' AND Attribute_2 = '1' AND Attribute_3 = '1' THEN '1_and_2_and_3'
+  WHEN Attribute_1 = '1' AND Attribute_2 = '1' AND Attribute_3 = '0' THEN '1_and_2'
+  WHEN Attribute_1 = '1' AND Attribute_2 = '0' AND Attribute_3 = '1' THEN '1_and_3'
+  WHEN Attribute_1 = '0' AND Attribute_2 = '1' AND Attribute_3 = '1' THEN '2_and_3'
+  WHEN Attribute_1 = '1' AND Attribute_2 = '0' AND Attribute_3 = '0' THEN '1'
+  WHEN Attribute_1 = '0' AND Attribute_2 = '1' AND Attribute_3 = '0' THEN '2'
+  WHEN Attribute_1 = '0' AND Attribute_2 = '0' AND Attribute_3 = '1' THEN '3'
+  ELSE '0'
+END AS Results
+FROM Tables_skema.Table as t1
+WHERE Results <> '0'
+;
