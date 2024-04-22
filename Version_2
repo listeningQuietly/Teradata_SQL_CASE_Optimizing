@@ -6,8 +6,6 @@ Pros:
 Cons:
   1) The order of the WHENs matters and generally requires the more complex WHENs earlier than their simpler counterparts to maintain accuracy.
   2) The O-runtime is less suboptimal because evaluation of only a few attributes is performed every WHEN, but this is not as efficient as possible.
-  3) Does this run accurately if there are non- 0 or 1 values present? Yes.
-     Can this withstand NULLs? Yes.
 Update: Traded WHEN order simplicity for significantly faster runtime (less evaluations per WHEN) and some data type protections (disallows string issues).
 */
 SELECT
