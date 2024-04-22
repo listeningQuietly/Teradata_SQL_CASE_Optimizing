@@ -4,7 +4,7 @@ Pros:
   1) The O-runtime is more optimal because WHEN statements with fewer conditionals are performed earlier.
 Cons:
   1) The structure is deceptively simple because order matters significantly more than previously and is dependent on the data if it is consistently a runtime upgrade.
-     This version favors evaluating combinations with Attribute_1 before the others, with Attibute_2 before Attribute_3, and then Attribute_3.
+     This version favors combinations with Attribute_1 before the others, with Attibute_2 before Attribute_3, and then Attribute_3.
 Update: Traded simplicity of order for significantly faster O-runtime.
 */
 SELECT
