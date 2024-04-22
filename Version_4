@@ -1,12 +1,10 @@
 /*
-Use a case statement to sort through 3 Attributes more efficiently.
+Use a case statement to sort through 3 Attributes most efficiently.
 Pros:
-  1) The O-runtime is now optimal because case statements only evaluation once per attribute.
-  2) The favoring of the evalutions (Attribute_1, Attribute_2, or Attribute_3) no longer matters.
+  1) The O-runtime is now optimized because the maximum number of conditionals evaluated is the same as the number of attributes.
+  2) The favoring of the evaluations (Attribute_1 over Attribute_2 over Attribute_3) no longer exists.
 Cons:
   1) The structure is complex.
-  2) Does this run accurately if there are non- 0 or 1 values present? Yes.
-     Can this withstand NULLs? Yes.
 Update: Traded a complex structure for fastest O-runtime.
 */
 SELECT
