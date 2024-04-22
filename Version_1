@@ -5,7 +5,7 @@ Pros:
   2) The order of the WHENs doesn't matter.
 Cons:
   1) The conditionals and outputs are NOT simple to maintain because of their data type.
-  2) The O-runtime is also suboptimal because evaluation on all attributes is performed every WHEN.
+  2) The O-runtime is also suboptimal because evaluations on all attributes is performed every WHEN.
 */
 SELECT
 t1.primary_key
