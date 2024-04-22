@@ -1,0 +1,35 @@
+/*
+Use a case statement to sort through 3 Attributes more efficiently.
+Pros:
+  1) The O-runtime is now optimal because case statements only evaluation once per attribute.
+  2) The favoring of the evalutions (Attribute_1, Attribute_2, or Attribute_3) no longer matters.
+Cons:
+  1) The structure is complex.
+  2) Does this run accurately if there are non- 0 or 1 values present? Yes.
+     Can this withstand NULLs? Yes.
+Update: Traded a complex structure for fastest O-runtime.
+*/
+SELECT
+t1.primary_key
+,CASE
+  WHEN t1.Attribute_1 = 1
+    THEN CASE
+      WHEN t1.Attribute_2 = 1
+        THEN CASE
+          WHEN t1.Attribute_3 = 1 THEN 7
+          ELSE 6
+        END
+      WHEN t1.Attribute_3 = 1 THEN 5
+      ELSE 1
+    END
+  WHEN t1.Attribute_2 = 1 
+    THEN CASE
+      t1.Attribute_3 = 1 THEN 4
+      ELSE 2
+    END
+  WHEN t1.Attribute_3 = 1 THEN 3
+  ELSE 0
+END AS Results
+FROM Tables_skema.Table AS t1
+WHERE Results <> 0
+;
