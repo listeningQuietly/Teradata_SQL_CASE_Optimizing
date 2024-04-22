@@ -2,7 +2,7 @@
 Use a case statement to sort through 3 Attributes most efficiently.
 Pros:
   1) The O-runtime is now optimized because the maximum number of conditionals evaluated is the same as the number of attributes.
-  2) The favoring of the evaluations (Attribute_1 before Attribute_2 before Attribute_3) is arbitrary.
+  2) The favoring of the evaluations (Attribute_1 before Attribute_2 before Attribute_3) does not matter.
 Cons:
   1) The structure is complex.
 Update: Traded a complex structure for fastest O-runtime.
