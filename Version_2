@@ -4,6 +4,7 @@ Pros:
   1) The O-runtime is more optimal because fewer conditionals are evaluated per WHEN on average.
   2) The conditionals and outputs are simpler to maintain.
   3) The structure is simple enough to understand.
+  4) The order of WHENs with the same number of conditionals does not matter.
 Cons:
   1) The order of the WHENs matters and generally requires the more complex WHENs earlier than their simpler counterparts to maintain accuracy.
 Update: Traded WHEN order simplicity for significantly faster runtime and some data type protections (disallows string issues).
