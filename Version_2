@@ -1,12 +1,11 @@
 /*
 Use a case statement to sort through 3 Attributes more efficiently.
 Pros:
-  1) The structure is simple enough to understand.
+  1) The O-runtime is less suboptimal because fewer attributes are evaluated per WHEN.
   2) The conditionals and outputs are simpler to maintain.
-  3) The O-runtime is less suboptimal because fewer attributes are evaluated per WHEN.
+  3) The structure is simple enough to understand.
 Cons:
   1) The order of the WHENs matters and generally requires the more complex WHENs earlier than their simpler counterparts to maintain accuracy.
-  2) This is not as efficient as possible.
 Update: Traded WHEN order simplicity for significantly faster runtime and some data type protections (disallows string issues).
 */
 SELECT
