@@ -4,10 +4,8 @@ Pros:
   1) The structure is exceedingly simple to understand.
   2) The order of the WHENs doesn't matter.
 Cons:
-  1) The conditionals and outputs are NOT simple to maintain.
-  2) The O-runtime is suboptimal because evaluation on all attributes is performed every WHEN.
-  3) Does this run accurately if there are non- '0' or '1' values present? Yes, but they should be prevented.
-     Can this withstand NULLs? Yes, but they should be prevented.
+  1) The conditionals and outputs are NOT simple to maintain because of their data type.
+  2) The O-runtime is also suboptimal because evaluation on all attributes is performed every WHEN.
 */
 SELECT
 t1.primary_key
