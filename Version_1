@@ -12,13 +12,13 @@ Cons:
 SELECT
 t1.primary_key
 ,CASE
-  WHEN Attribute_1 = '1' AND Attribute_2 = '1' AND Attribute_3 = '1' THEN '1_and_2_and_3'
-  WHEN Attribute_1 = '1' AND Attribute_2 = '1' AND Attribute_3 = '0' THEN '1_and_2'
-  WHEN Attribute_1 = '1' AND Attribute_2 = '0' AND Attribute_3 = '1' THEN '1_and_3'
-  WHEN Attribute_1 = '0' AND Attribute_2 = '1' AND Attribute_3 = '1' THEN '2_and_3'
-  WHEN Attribute_1 = '1' AND Attribute_2 = '0' AND Attribute_3 = '0' THEN '1'
-  WHEN Attribute_1 = '0' AND Attribute_2 = '1' AND Attribute_3 = '0' THEN '2'
-  WHEN Attribute_1 = '0' AND Attribute_2 = '0' AND Attribute_3 = '1' THEN '3'
+  WHEN t1.Attribute_1 = '1' AND t1.Attribute_2 = '1' AND t1.Attribute_3 = '1' THEN '1_and_2_and_3'
+  WHEN t1.Attribute_1 = '1' AND t1.Attribute_2 = '1' AND t1.Attribute_3 = '0' THEN '1_and_2'
+  WHEN t1.Attribute_1 = '1' AND t1.Attribute_2 = '0' AND t1.Attribute_3 = '1' THEN '1_and_3'
+  WHEN t1.Attribute_1 = '0' AND t1.Attribute_2 = '1' AND t1.Attribute_3 = '1' THEN '2_and_3'
+  WHEN t1.Attribute_1 = '1' AND t1.Attribute_2 = '0' AND t1.Attribute_3 = '0' THEN '1'
+  WHEN t1.Attribute_1 = '0' AND t1.Attribute_2 = '1' AND t1.Attribute_3 = '0' THEN '2'
+  WHEN t1.Attribute_1 = '0' AND t1.Attribute_2 = '0' AND t1.Attribute_3 = '1' THEN '3'
   ELSE '0'
 END AS Results
 FROM Tables_skema.Table AS t1
