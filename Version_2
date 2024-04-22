@@ -13,13 +13,13 @@ Update: Traded WHEN order simplicity for significantly faster runtime (less eval
 SELECT
 t1.primary_key
 ,CASE
-  WHEN Attribute_1 = 1 AND Attribute_2 = 1 AND Attribute_3 = 1 THEN 7
-  WHEN Attribute_1 = 1 AND Attribute_2 = 1 THEN 6
-  WHEN Attribute_1 = 1 AND Attribute_3 = 1 THEN 5
-  WHEN Attribute_2 = 1 AND Attribute_3 = 1 THEN 4
-  WHEN Attribute_1 = 1 THEN 1
-  WHEN Attribute_2 = 1 THEN 2
-  WHEN Attribute_3 = 1 THEN 3
+  WHEN t1.Attribute_1 = 1 AND t1.Attribute_2 = 1 AND t1.Attribute_3 = 1 THEN 7
+  WHEN t1.Attribute_1 = 1 AND t1.Attribute_2 = 1 THEN 6
+  WHEN t1.Attribute_1 = 1 AND t1.Attribute_3 = 1 THEN 5
+  WHEN t1.Attribute_2 = 1 AND t1.Attribute_3 = 1 THEN 4
+  WHEN t1.Attribute_1 = 1 THEN 1
+  WHEN t1.Attribute_2 = 1 THEN 2
+  WHEN t1.Attribute_3 = 1 THEN 3
   ELSE 0
 END AS Results
 FROM Tables_skema.Table AS t1
