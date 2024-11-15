@@ -1,5 +1,5 @@
 /*
-Use a case statement to sort through 3 Attributes.
+Use a case statement to sort through combinations of 3 Attributes.
 Pros:
   1) The structure is exceedingly simple to understand.
   2) The order of the WHENs doesn't matter.
