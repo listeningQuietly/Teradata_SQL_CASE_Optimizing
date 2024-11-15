@@ -1,5 +1,5 @@
 /*
-Use a case statement to sort through 3 Attributes most efficiently.
+Use a case statement to sort through combinations of 3 Attributes most efficiently.
 Pros:
   1) The O-runtime is now optimized because the maximum number of conditionals evaluated is the same as the number of attributes.
   2) The favoring of the combinations (Attribute_1 over Attribute_2 over Attribute_3) is eliminated.
