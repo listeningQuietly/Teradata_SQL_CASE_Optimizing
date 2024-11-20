@@ -1,5 +1,5 @@
 /*
-Q: Using CASE statements to segment rows across three independent traits (Attribute_1, Attribute_2, and Attribute_3) that only include values of 0s and 1s while ignoring the all 0s segment.
+Q: Use CASE statements to segment rows across three independent traits (Attribute_1, Attribute_2, and Attribute_3) that only include values of 0s and 1s while ignoring the all 0s segment.
 A: Use case statements to sort through combinations of 3 Attributes even more efficiently.
 Pros:
   1) The runtime is slgihtly more optimized because WHEN statements with fewer conditionals are performed earlier.
