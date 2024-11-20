@@ -1,5 +1,5 @@
 /*
-Q: Using CASE statements to segment rows across three independent traits (Attribute_1, Attribute_2, and Attribute_3).
+Q: Using CASE statements to segment rows across three independent traits (Attribute_1, Attribute_2, and Attribute_3) that only include values of 0s and 1s while ignoring the all 0s segment.
 A: 3 Attributes with only 2 values is 9 (3^2) segments. Here is the simplest way to sort them.
 Pros:
   1) The structure is exceedingly simple to understand.
