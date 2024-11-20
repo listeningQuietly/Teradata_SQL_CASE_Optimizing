@@ -1,6 +1,6 @@
 /*
 Q: Use CASE statements to segment rows across three independent traits (Attribute_1, Attribute_2, and Attribute_3) that only include values of 0s and 1s while ignoring the all 0s segment.
-A: 3 Attributes with only 2 values is 9 (2^3) segments -1 for the all 0s. Here is the simplest way to sort them.
+A: 3 Attributes with only 2 values is 8 (2^3) segments -1 for the all 0s. 7 segments * 3 operations = 21 operations total. Here is the simplest way to sort them. 
 Pros:
   1) The structure is exceedingly simple to understand.
   2) The order of the WHENs doesn't matter.
