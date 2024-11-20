@@ -2,7 +2,7 @@
 Q: Use CASE statements to segment rows across three independent traits (Attribute_1, Attribute_2, and Attribute_3) that only include values of 0s and 1s while ignoring the all 0s segment.
 A: Use case statements and sort through combinations of 3 Attributes more efficiently.
 Pros:
-  1) The runtime is more optimized because half as many conditionals (24/8 > 12/8) are evaluated per WHEN on average, assuming even distributions.
+  1) The runtime is more optimized because nearly half as many conditionals (21/3 > 12/7) are evaluated per WHEN on average, assuming even distributions.
   2) The conditionals and outputs are simpler to maintain.
   3) The structure is simple enough to understand.
   4) The order of WHENs with the same number of conditionals does not matter.
