@@ -1,5 +1,4 @@
 # Teradata_SQL_CASE_Optimizing
-This is part of a growing section expressing my fascination with coding optimizations.
 
 It is often that as a specialist, I see data problems coming. Sometimes the customer has the budget to prevent it, but more often, they reply 'that is not within scope today.' Which is fair, but that does not really stop me from thinking about how to solve or even prevent issues entirely.
 
