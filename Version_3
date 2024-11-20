@@ -6,7 +6,7 @@ Pros:
 Cons:
   1) The structure is deceptively simple because order matters significantly more than previously and is dependent on the data if it is consistently an upgrade.
      This version favors combinations with Attribute_1 before the others, then Attibute_2 before Attribute_3.
-Update: Traded simplicity of order for slightly faster runtime.
+Update: Traded simplicity of order for slightly faster runtime based on data points and assuming uneven distribution.
 */
 SELECT
 t1.primary_key
