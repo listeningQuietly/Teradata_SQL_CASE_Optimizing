@@ -1,14 +1,16 @@
 /*
-Q: Use CASE statements to segment rows across three independent traits (Attribute_1, Attribute_2, and Attribute_3) that only include values of 0s and 1s while ignoring the all 0s segment.
-A: Use CASE statements and sort through combinations of 3 Attributes more efficiently.
+Q: Same as before.
+A: Use CASE statements and sort through combinations of 3 Attributes more efficiently than Version_1 while maintaining same level of accuracy.
 Pros:
-  1) The runtime is more optimized because 43% fewer conditionals (21/3 => 12/7) are evaluated total, lowering evaluations per WHEN on average, assuming even distributions.
-  2) The conditionals and outputs are simpler to maintain.
-  3) The structure is simple enough to understand.
-  4) The order of WHENs with the same number of conditionals does not matter.
+ 1) The runtime is significantly shorter because 43% fewer conditionals (21/8 => 12/8) are evaluated, lowering average evaluations per WHEN, assuming even distributions.
+ 2) The conditionals and outputs are easier to maintain as integers.
+ 3) The structure is simple enough to understand.
+ 4) The order of WHENs *with the same number of conditionals* does not matter.
 Cons:
-  1) The order of the WHENs matters and generally requires the more complex WHENs earlier than their simpler counterparts to maintain accuracy.
-Update: Traded WHEN order simplicity for significantly shorter runtime and gained data type protections (disallows string issues).
+ 1) The order of the WHENs matters and requires the more complex WHENs earlier than their simpler counterparts to maintain accuracy.
+ 2) Documentation for what the various outputs represent will need to be maintained (like a legend on a map). It isn't hard, but does require maintaining.
+
+Update Summary: Traded WHEN order simplicity for significantly shorter runtime via 43% fewer conditionals and decreased maintenance cost via changed data types.
 */
 SELECT
 t1.primary_key
