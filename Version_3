@@ -1,7 +1,6 @@
 /*
 Q: Same as before.
 A: Use CASE statements to sort through combinations of 3 Attributes more efficiently than Version_2 while maintaining same level of accuracy.
-
 Pros:
  1) The runtime is shorter (improved), because WHENs with fewer conditionals are evaluated earlier, but the percentage of improvement is reliant on how often Attribute_1=1, Attribute_2=1, and Attribute_3=1 occurs.
 Cons:
