@@ -2,7 +2,7 @@
 Q: Same as before.
 A: Use CASE statements to sort through combinations of 3 Attributes *most* efficiently.
 Pros:
-  1) The runtime is now completely optimized because the maximum number of conditionals evaluated is the same as the number of attributes (12/7 => 3/7).
+  1) The runtime is now completely optimized because the maximum number of conditionals evaluated is the same as the number of attributes (12/8 => 3/8).
   2) The favoring of the combinations (Attribute_1 over Attribute_2 over Attribute_3) is eliminated.
 Cons:
   1) The structure is complex to expand.
