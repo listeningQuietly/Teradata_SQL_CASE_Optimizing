@@ -1,12 +1,12 @@
 /*
 Q: Same as before.
-A: Use CASE statements to sort through combinations of 3 Attributes *most* efficiently.
+A: Use CASE statements to sort through combinations of 3 Attributes *most* efficiently (Final Version).
 Pros:
   1) The runtime is now completely optimized because the maximum number of conditionals evaluated is the same as the number of attributes (12/8 => 3/8).
-  2) The favoring of the combinations (Attribute_1 over Attribute_2 over Attribute_3) is eliminated.
+  2) The maintenance costs spent reworking the syntax to maintain advantage are eliminated because the combination bias (Attribute_1 over Attribute_2 over Attribute_3) is eliminated.
 Cons:
-  1) The structure is complex to expand.
-Summary Update: Traded a complex structure that required constant maintenance for syntax that is challenging to expand, but doesn't favor an attribute, does not require constant reworking, and does have the fastest runtime possible.
+  1) The syntax is tedious to expand.
+Summary Update: Traded complex, biased syntax that requires constant maintenance for syntax that is challenging to expand, but does have the fastest runtime possible and also does not require constant reworking.
 */
 SELECT
 t1.primary_key
