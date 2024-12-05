@@ -6,7 +6,7 @@ Pros:
   2) The maintenance costs spent reworking the syntax to maintain advantage are eliminated because the combination bias (Attribute_1 over Attribute_2 over Attribute_3) is eliminated.
 Cons:
   1) The syntax is tedious to expand.
-Summary Update: Traded complex, biased syntax that requires constant maintenance for syntax that is challenging to expand, but does have the fastest runtime possible and also does not require constant reworking.
+Summary Update: Traded complex, biased syntax that requires constant maintenance for syntax that is tedious to expand, but does have the fastest runtime possible and also does not require constant reworking.
 */
 SELECT
 t1.primary_key
