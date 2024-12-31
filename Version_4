@@ -24,7 +24,7 @@ t1.primary_key
     END
   WHEN t1.Attribute_2 = 1 
     THEN CASE
-      t1.Attribute_3 = 1 THEN 4
+      WHEN t1.Attribute_3 = 1 THEN 4
       ELSE 2
     END
   WHEN t1.Attribute_3 = 1 THEN 3
